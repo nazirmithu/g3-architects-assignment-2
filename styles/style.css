@@ -48,6 +48,7 @@ nav {
 }
 
 /* Header Section  */
+
 #header {
     position: static;
     top: 50px;
@@ -76,6 +77,7 @@ nav {
 }
 
 /* Feature Section  */
+
 .feature-main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -173,11 +175,14 @@ nav {
     font-size: 25px;
 }
 
+/* <!-- Some Facts section --> */
+
 .section-title {
     font-size: 45px;
     color: #131313;
 }
-.skill-description-skill{
+
+.skill-description-skill {
     color: #727272;
     margin-top: 24px;
 }
@@ -188,16 +193,80 @@ nav {
     border: 1px solid #FF900E;
     border-radius: 8px;
 }
-.skills-container{
+
+.skills-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 100px;
     margin: 50px 0;
 }
-.some-facts{
+
+.some-facts {
     padding: 80px 0;
 }
+
 .skill:hover {
     border: 2px solid #0e12ff;
-    
+}
+
+/* <!-- Our Sponspors section--> */
+
+.sponspors-title {
+    text-align: center;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 24px;
+}
+
+.sponspors-description {
+    color: #727272;
+    font-size: 16px;
+    text-align: center;
+}
+
+.logo {
+    text-align: center;
+    padding: 25px;
+}
+
+.sponspors-company-logo {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 50px;
+    margin: 50px 0;
+}
+
+.sponspors-company {
+    padding: 50px 0;
+}
+
+.footer-tag {
+    text-align: center;
+    font-size: 20px;
+    background: #FFF4E7;
+    justify-items: center;
+    padding: 20px 10px;
+    width: 800px;
+    height: 10px;
+    margin-left: 400px;
+    margin-bottom: 50px;
+
+}
+
+
+
+/* media queries */
+
+/* Mobile Devices */
+
+@media only screen and (max-width: 576px){
+    .container{
+        width:100%;
+    }
+    .feature-main, .feature-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-two-main, .skills-container, .sponspors-company-logo{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
