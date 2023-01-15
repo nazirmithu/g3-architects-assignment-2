@@ -1,145 +1,203 @@
 * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
     font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #424242;
+    font-size: 18px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 10px 50px;
+    align-items: center;
 }
 
-.nav-title {
-    font-weight: 700;
-    font-size: 45px;
+.nav-menu li {
+    margin-left: 30px;
 }
 
-nav ul {
-    display: flex;
+.banner-content {
+    text-align: center;
 }
 
-nav li {
-    list-style: none;
-    
+.banner-button {
+    background: #FF900E;
+    border-radius: 8px;
+    padding: 20px;
+    color: #FFFFFF;
+    font-size: 20px;
+    border: none;
 }
 
-.banner {
+/* Header Section  */
+#header {
+    position: static;
+    top: 50px;
+    left: 137px;
+}
+
+#banner {
     background: rgba(255, 144, 14, 0.1);
-    }
+    padding: 100px 0;
+}
 
 .banner-title {
     font-size: 64px;
     color: #131313;
-    text-align: center;
-
-
+    padding: 25px;
 }
 
-.banner-description,
-.container-description {
+.banner-description {
     color: #727272;
-
-}
-
-.btn-button {
-    width: 180px;
-    height: 64px;
-    font-size: 20px;
-    color: #FFFFFF;
-    background: #FF900E;
-    border-radius: 5px;
-    border: 0;
-
+    margin-bottom: 32px;
 }
 
 .banner-image {
-    text-align: center;
-    padding: 50px 50px;
+    width: 100%;
+    margin-top: 50px;
 }
 
-.container {
-    display: flex;
+/* Feature Section  */
+.feature-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    padding: 50px 0;
 }
 
-.container-title {
+.feature-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.feature-title {
     font-size: 45px;
     color: #727272;
-
+    margin-bottom: 24px;
 }
 
 .text-primary {
+    font-size: 45px;
     color: #131313;
 }
 
 .text-primary-2 {
+    font-size: 45px;
     color: #FF900E;
 }
 
-.text-container {
-    display: flex;
-    padding: 50px 50px;
+.feature-description {
+    color: #727272;
+    margin-bottom: 32px;
 }
 
-.skills-container {
-    display: flex;
-    gap: 241.83px;
+.feature-two-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.feature-two-heading h1 {
+    font-size: 45px;
+    color: #131313;
+}
+
+.feature-image-two {
+    width: 600px;
+    position: relative;
+}
+
+.feature-image-two img {
+    width: 100%;
+}
+
+.feature-two-heading p {
+    color: #727272;
+    font-size: 16px;
+    padding-top: 15px;
+}
+
+.feature-two-heading,
+.feature-two-details {
+    margin-bottom: 30px;
+}
+
+.feature-two-details {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.feature-two-sub-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-two-description {
+    color: #727272;
+    font-size: 16px;
+}
+
+.feature-button {
+    padding: 20px 30px;
+    font-size: 65px;
+    font-weight: 700;
+    position: absolute;
+    left: -30px;
+    bottom: 10px;
+}
+
+.feature-button span {
+    display: block;
+    font-weight: 500;
+    font-size: 25px;
 }
 
 .section-title {
     font-size: 45px;
     color: #131313;
 }
-
-.skill-description-skill {
+.skill-description-skill{
     color: #727272;
     margin-top: 24px;
 }
 
 .skill {
+    text-align: center;
+    padding: 25px;
     border: 1px solid #FF900E;
     border-radius: 8px;
-    align-items: center;
-    padding: 30px;
-    margin-top: 100px;
 }
-
-.skill-title {
-    color: #727272;
-    font-size: 45px;
-    text-align: center;
-
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 100px;
+    margin: 50px 0;
 }
-
-.skill-description {
-    font-size: 20px;
-    text-align: center;
+.some-facts{
+    padding: 80px 0;
 }
-
-.sponspors-title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 45px;
-    color: #131313;
-    margin-bottom: 24px;
-}
-
-.sponspors-description {
-    text-align: center;
-    color: #727272;
-    margin-bottom: 50px;
-}
-
-.sponspors-name {
-    text-align: center;
-
-}
-
-.tooter-tag {
-    text-align: center;
-    background: #FFF4E7;
-    border-radius: 8px;
-    padding: 50px 50px;
-    font-size: 20px;
-    color: #424242;
-    margin-top: 130px;
+.skill:hover {
+    border: 2px solid #0e12ff;
+    
 }
